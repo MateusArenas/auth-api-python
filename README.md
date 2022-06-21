@@ -15,9 +15,13 @@ pip install -r requirements.txt
 
 ## BEFORE Run API (Configure .env)
 create .env file
+
 your .env file...
+
 export FLASK_APP="app"
+
 export EMAIL_USER="myemail@gmail.com"
+
 export EMAIL_PASS="mypassword123"
 
 ## Run API
