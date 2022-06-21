@@ -1,17 +1,28 @@
-# auth-api-python
-API de autenticação em python
+# authenticate api in python
 
-# INIT
+this api usage basic for authenticate, jtw, refresh token and email verification.
+
+
+## Initialize
 pip install virtualenv
-venv\Scripts\activate
+
+venv\Scripts\activate 
+
 pip install -r requirements.txt
 
-# UPDATE DEPENDENCES > AFTER INIT
+## Update dependences > after initialize
 (virtualenv) $ pip freeze > requirements.txt
 
-# RUN
-$env:FLASK_APP = "app"
+## BEFORE Run API (Configure .env)
+create .env file
+
+your .env file...
+
+export FLASK_APP="app"
+
+export EMAIL_USER="myemail@gmail.com"
+
+export EMAIL_PASS="mypassword123"
+
+## Run API
 flask run
-
-
-
