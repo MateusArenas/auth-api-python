@@ -13,11 +13,12 @@ pip install -r requirements.txt
 ## Update dependences > after initialize
 (virtualenv) $ pip freeze > requirements.txt
 
+## BEFORE Run API (Configure .env)
+create .env file
+your .env file...
+export FLASK_APP="app"
+export EMAIL_USER="myemail@gmail.com"
+export EMAIL_PASS="mypassword123"
+
 ## Run API
-$env:EMAIL_USER = "simplechatpop@gmail.com"
-
-$env:EMAIL_PASS = "muuphsjihdktgowy"
-
-$env:FLASK_APP = "app" 
-
 flask run
