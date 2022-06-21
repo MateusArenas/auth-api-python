@@ -42,11 +42,23 @@ class Transport:
         self.s.sendmail(msg['From'], [msg['To']], msg.as_string().encode())
         print('Email enviado')
 
+
+import os
+
+email_user = os.getenv('EMAIL_USER')
+email_pass = os.getenv('EMAIL_PASS')
+
+if email_user == None: 
+    raise Exception('Not Provider Email User')
+
+if email_pass == None: 
+    raise Exception('Not Provider Email Password')
+
 transporter = Transport({
     'smtp': 'smtp.gmail.com: 587',
     'auth': {
-        'user': 'simplechatpop@gmail.com',
-        'pass': 'muuphsjihdktgowy'
+        'user': email_user,
+        'pass': email_pass
     },
     'view': '../resources/mail/',
     'ext': '.html'
