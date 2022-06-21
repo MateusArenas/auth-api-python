@@ -1,6 +1,6 @@
 # authenticate api in python
 
-this api usage basic for authenticate, jtw and refresh token.
+this api usage basic for authenticate, jtw, refresh token and email verification.
 
 
 ## Initialize
